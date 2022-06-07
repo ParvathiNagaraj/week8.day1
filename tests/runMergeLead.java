@@ -15,7 +15,7 @@ public class runMergeLead extends ProjectSpecificMethods {
 
 	@Test(dataProvider = "testData")
 
-	public void runMergeLead(String username, String password, String firstName1, String firstName2)
+	public void MergeLead(String username, String password, String firstName1, String firstName2)
 			throws InterruptedException {
 
 		new LoginPage().enterUserName(username).enterPassword(password).clickLoginButton().clickCRMSFALink()
