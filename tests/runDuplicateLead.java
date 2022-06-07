@@ -15,7 +15,7 @@ public class runDuplicateLead extends ProjectSpecificMethods {
 
 	@Test(dataProvider = "testData")
 
-	public void runDuplicateLead(String username, String password, String phoneNumber) throws InterruptedException {
+	public void DuplicateLead(String username, String password, String phoneNumber) throws InterruptedException {
 
 		new LoginPage().enterUserName(username).enterPassword(password).clickLoginButton().clickCRMSFALink()
 				.clickLeads().clickFindLeads().clickPhone().enterPhoneNum(phoneNumber).clickFindLeadsButton().getFirstLeadId()
