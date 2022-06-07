@@ -15,7 +15,7 @@ public class runDeleteLead extends ProjectSpecificMethods {
 
 	@Test(dataProvider = "testData")
 
-	public void runDeleteLead(String username, String password, String phoneNumber) throws InterruptedException {
+	public void DeleteLead(String username, String password, String phoneNumber) throws InterruptedException {
 
 		new LoginPage().enterUserName(username).enterPassword(password).clickLoginButton().clickCRMSFALink()
 				.clickLeads().clickFindLeads().clickPhone().enterPhoneNum(phoneNumber).clickFindLeadsButton()
