@@ -13,7 +13,7 @@ public class runEditLead extends ProjectSpecificMethods {
 	}
 
 	@Test(dataProvider = "testData")
-	public void runEditLead(String username, String password, String phoneNumber, String companyName) throws InterruptedException {
+	public void EditLead(String username, String password, String phoneNumber, String companyName) throws InterruptedException {
 
 		new LoginPage().enterUserName(username).enterPassword(password).clickLoginButton().clickCRMSFALink()
 				.clickLeads().clickFindLeads().clickPhone().enterPhoneNum(phoneNumber).clickFindLeadsButton()
